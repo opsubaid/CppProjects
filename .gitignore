@@ -1,0 +1,17 @@
+# 1. Ignore the build artifacts and IDE files globally
+bin/
+obj/
+*.cbp
+*.exe
+*.o
+*.layout
+
+# 2. If you want to be extra strict and ONLY allow specific files:
+# Ignore everything...
+*
+# ...But do NOT ignore folders (so Git can look inside them)
+!*/
+# ...And do NOT ignore your specific source/doc files
+!main.cpp
+!README.md
+!.gitignore
